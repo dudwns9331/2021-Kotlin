@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Summer-part2-chapter05</string>
+    <string name="executeWindow">전자액자 실행하기</string>
+    <string name="addPhoto">사진 추가하기</string>
+</resources>
