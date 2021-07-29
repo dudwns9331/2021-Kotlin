@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+    <com.example.summer_part2_chapter07.SoundVisualizerView
+        android:id="@+id/soundVisualizer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/recordTimeTextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.example.summer_part2_chapter07.SoundVisualizerView>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        app:layout_constraintBottom_toBottomOf="@+id/recordButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/recordButton"
+        app:layout_constraintTop_toTopOf="@+id/recordButton" />
+
+    <com.example.summer_part2_chapter07.CountUpView
+        android:id="@+id/recordTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="00:00"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/recordButton"
+        app:layout_constraintLeft_toLeftOf="@+id/recordButton"
+        app:layout_constraintRight_toRightOf="@+id/recordButton" />
+
+    <com.example.summer_part2_chapter07.RecordButton
+        android:id="@+id/recordButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="50dp"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:src="@drawable/ic_record">
+
+    </com.example.summer_part2_chapter07.RecordButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
