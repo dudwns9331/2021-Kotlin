@@ -120,7 +120,7 @@
 
 <p align="center">
 
-<img src="https://github.com/dudwns9331/2021-Summer-Kotlin/blob/master/Summer-Technical-Note/assets/ViewGroup.PNG" width="600px" height="460px"/>
+<img src="https://github.com/dudwns9331/2021-Summer-Kotlin/blob/master/Summer-Technical-Note/assets/PaddingMargin.PNG" width="600px" height="460px"/>
 
 </p>
 
