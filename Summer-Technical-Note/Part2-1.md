@@ -75,7 +75,7 @@ ConstraintLayout은 다음과 같은 제약조건을 추가하거나 삭제할 �
 
 <p align="center">
 
-<img src="https://github.com/dudwns9331/2021-Summer-Kotlin/blob/master/Summer-Technical-Note/assets/constraint01.PNG" width="460px" height="220px"/>
+<img src="https://github.com/dudwns9331/2021-Summer-Kotlin/blob/master/Summer-Technical-Note/assets/constraint1.PNG" width="460px" height="220px"/>
 
 </p>
 
@@ -87,7 +87,7 @@ ConstraintLayout은 다음과 같은 제약조건을 추가하거나 삭제할 �
 
 <p align="center">
 
-<img src="https://github.com/dudwns9331/2021-Summer-Kotlin/blob/master/Summer-Technical-Note/assets/constraint02.PNG" width="460px" height="220px"/>
+<img src="https://github.com/dudwns9331/2021-Summer-Kotlin/blob/master/Summer-Technical-Note/assets/constraint2.PNG" width="460px" height="220px"/>
 
 </p>
 
@@ -105,7 +105,7 @@ ConstraintLayout은 다음과 같은 제약조건을 추가하거나 삭제할 �
 
 <p align="center">
 
-<img src="https://github.com/dudwns9331/2021-Summer-Kotlin/blob/master/Summer-Technical-Note/assets/constraint03.PNG" width="460px" height="220px"/>
+<img src="https://github.com/dudwns9331/2021-Summer-Kotlin/blob/master/Summer-Technical-Note/assets/constraint3.PNG" width="460px" height="220px"/>
 
 </p>
 
