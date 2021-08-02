@@ -74,7 +74,7 @@ app:layout_constraintHorizontal_chainStyle="packed"
 
 <p align="center">
 
-<img src="https://github.com/dudwns9331/2021-Summer-Kotlin/blob/master/Summer-Technical-Note/assets/chain.png" width="500px" height="140px"/>
+<img src="https://github.com/dudwns9331/2021-Summer-Kotlin/blob/master/Summer-Technical-Note/assets/chains.png" width="500px" height="140px"/>
 
 </p>
 
