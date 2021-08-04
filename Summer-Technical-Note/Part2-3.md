@@ -534,4 +534,70 @@ LayoutInflater 주석 설명
 
 ---
 
+**History.kt** - model
+
+```kt
+package com.example.summer_part2_chapter04.model
+
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity
+data class History(
+    @PrimaryKey val uid: Int?,
+    @ColumnInfo(name = "expression") val expression: String?,
+    @ColumnInfo(name = "result") val result: String?
+)
+```
+
+Histroy 라는 데이터 모델을 작성한다.
+
+`@Entity` 어노테이션은 개체를 의미하고 데이터 클래스를 통해서 데이터베이스에 들어갈 값들을 정의한다.
+
+`@PrimaryKey` 는 기본키로 uid 값을 갖도록 지정한다.
+`@ColumnInfo` 는 속성에 대한 정의이다.
+
+---
+
+**HistoryDao.kt** - DAO
+
+```kt
+package com.example.summer_part2_chapter04.dao
+
+import androidx.room.Dao
+import androidx.room.Delete
+import androidx.room.Insert
+import androidx.room.Query
+import com.example.summer_part2_chapter04.model.History
+
+@Dao
+interface HistoryDao {
+
+    @Query("SELECT * FROM history")
+    fun getAll(): List<History>
+
+    @Insert
+    fun insertHistory(history: History)
+
+    @Query("DELETE FROM history")
+    fun deleteAll()
+
+    @Delete
+    fun delete(history: History)
+
+//    @Query("SELECT * FROM history WHERE result LIKE result LIMIT 1")
+//    fun findByResult(result: String) : History
+}
+
+```
+
+`Dao` 에 쿼리에 대한 정의를 한다. 현재 프로젝트에는 삽입과 삭제만 정의되면 된다.
+
+<br>
+
+데이터모델과 Dao, 데이터베이스에 대한 정리는 해당 part의 마지막 부분에 정리하겠음.
+
+---
+
 참고문서 - [안드로이드 공식 개발자 페이지](https://developer.android.com/?hl=ko)
