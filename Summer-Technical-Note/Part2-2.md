@@ -1,4 +1,4 @@
-# Part2 - 1
+# Part2 - 2
 
 ## Summber Kotlin part2 2021-08-02 다이어리
 
