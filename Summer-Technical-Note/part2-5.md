@@ -275,3 +275,5 @@ SoundPool은 APK 내부의 리소스 또는 파일 시스템의 파일에서 메
 ---
 
 참고문서 - [안드로이드 공식 개발자 페이지](https://developer.android.com/?hl=ko)
+
+2021-08-09 이름 수정
