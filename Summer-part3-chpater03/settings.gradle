@@ -1,0 +1,2 @@
+rootProject.name = "Summer-part3-chpater03"
+include ':app'
