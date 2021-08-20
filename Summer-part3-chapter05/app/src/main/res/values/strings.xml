@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Summer-part3-chapter05</string>
+    <string name="log_in">로그인</string>
+    <string name="sign_up">회원가입</string>
+    <string name="facebook_app_id">254326413033325</string>
+    <string name="fb_login_protocol_scheme">fb254326413033325</string>
+</resources>
