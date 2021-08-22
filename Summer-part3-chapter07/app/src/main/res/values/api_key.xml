@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--mdzppataum-->
+    <string name="naver_map_client_id">Your Client ID</string>
+</resources>
