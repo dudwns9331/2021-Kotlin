@@ -227,7 +227,7 @@ when 조건문을 사용해서 NORMAL, EXPANDABLE, CUSTOM 인 경우 Notificatio
 
 <p align="center">
 
-<img src="https://github.com/dudwns9331/2021-Summer-Kotlin/blob/master/Summer-Technical-Note/assets/part3-chap1-result" width="360px" height="640px"/>
+<img src="https://github.com/dudwns9331/2021-Summer-Kotlin/blob/master/Summer-Technical-Note/assets/part3-chap1-result.PNG" width="360px" height="640px"/>
 
 </p>
 
