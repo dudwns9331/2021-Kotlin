@@ -1,5 +1,10 @@
 package com.example.summer_part3_chpater03
 
+/**
+ * 알람에 대한 정보
+ * TextView 에 보여지는 데이터 정보들
+ * 시, 분, on/off 에 대한 정보를 저장한다.
+ */
 data class AlarmDisplayModel(
     val hour: Int,
     val minute: Int,
