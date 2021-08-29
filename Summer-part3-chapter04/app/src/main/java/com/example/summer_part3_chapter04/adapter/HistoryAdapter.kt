@@ -8,6 +8,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.summer_part3_chapter04.databinding.ItemHistoryBinding
 import com.example.summer_part3_chapter04.model.History
 
+/**
+ * BookAdapter 와 거의 유사하다.
+ * historyDeleteClickedListener 를 통해서 클릭했을 때, 삭제하는 이벤트 처리를 해준다.
+ */
 class HistoryAdapter(val historyDeleteClickedListener: (String) -> Unit) :
     ListAdapter<History, HistoryAdapter.HistoryItemViewHolder>(diffUtil) {
 

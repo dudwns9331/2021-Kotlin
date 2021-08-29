@@ -9,6 +9,10 @@ import com.bumptech.glide.Glide
 import com.example.summer_part3_chapter04.databinding.ItemBookBinding
 import com.example.summer_part3_chapter04.model.Book
 
+/**
+ *  책에 대한 내용을 담는 List 에 대한 어댑터
+ *  itemClickedListener 를 받아서 아이템을 클릭했을 때의 이벤트 처리를 한다.
+ */
 class BookAdapter(private val itemClickedListener: (Book) -> Unit) :
     ListAdapter<Book, BookAdapter.BookItemViewHolder>(diffUtil) {
 
@@ -16,13 +20,17 @@ class BookAdapter(private val itemClickedListener: (Book) -> Unit) :
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(bookModel: Book) {
+            // 책 제목과 설명을 보여준다.
             binding.titleTextView.text = bookModel.title
             binding.descriptionTextView.text = bookModel.description
 
+            // 아이템을 눌렀을 떄, itemClickedListener 에서 처리하도록 함
             binding.root.setOnClickListener {
                 itemClickedListener(bookModel)
             }
 
+            // Glide 를 통해서 리스트에 이미지가 표시되도록 한다.
+            // 리스트는 이미지가 좌측, 제목과 설명이 우측에 정렬되어 있다.
             Glide
                 .with(binding.coverImageView.context)
                 .load(bookModel.coverSmallUrl)
@@ -54,5 +62,4 @@ class BookAdapter(private val itemClickedListener: (Book) -> Unit) :
             }
         }
     }
-
 }
