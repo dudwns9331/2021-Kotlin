@@ -9,11 +9,11 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 
 
-class MatchedUserAdpater: ListAdapter<CardItem, MatchedUserAdpater.ViewHolder>(diffUtil){
+class MatchedUserAdapter : ListAdapter<CardItem, MatchedUserAdapter.ViewHolder>(diffUtil) {
 
 
     inner class ViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
-        fun bind(cardItem : CardItem) {
+        fun bind(cardItem: CardItem) {
             view.findViewById<TextView>(R.id.userNameTextView).text = cardItem.name
         }
     }
