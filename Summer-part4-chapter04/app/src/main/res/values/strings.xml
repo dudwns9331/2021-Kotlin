@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Summer-part4-chapter04</string>
+    <string name="button_free">2주 무료 이용</string>
+    <string name="watching">Watching</string>
+    <string name="login">로그인</string>
+    <string name="intro_text">영화, 드라마, 예능 등 8만 편의 작품</string>
+    <string name="intro_button">2주 무료 이용</string>
+</resources>

@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:fitsSystemWindows="false"
+    tools:ignore="HardcodedText">
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/buttonShownMotionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:layoutDescription="@xml/button_shown_scene"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".MainActivity">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"
+                    android:paddingTop="16dp">
+
+                    <TextView
+                        android:id="@+id/introduceContentsTitleTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="영화, 드라마, 예능 등 8만 편의 작품"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/useTwoWeeksButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginBottom="200dp"
+                        android:paddingHorizontal="24dp"
+                        android:paddingVertical="12dp"
+                        android:text="2주 무료 이용"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/introduceContentsTitleTextView" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.motion.widget.MotionLayout
+                    android:id="@+id/gatheringDigitalThingsBackgroundMotionLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layoutDescription="@xml/gathering_digital_things_background_scene">
+
+                    <ImageView
+                        android:id="@+id/gatheringDigitalThingsBackgroundImageView"
+                        android:layout_width="0dp"
+                        android:layout_height="400dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_killingeve"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="ContentDescription" />
+
+                    <View
+                        android:id="@+id/backgroundDimView"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@id/gatheringDigitalThingsBackgroundImageView"
+                        app:layout_constraintEnd_toEndOf="@id/gatheringDigitalThingsBackgroundImageView"
+                        app:layout_constraintStart_toStartOf="@id/gatheringDigitalThingsBackgroundImageView"
+                        app:layout_constraintTop_toTopOf="@id/gatheringDigitalThingsBackgroundImageView" />
+
+                    <androidx.constraintlayout.motion.widget.MotionLayout
+                        android:id="@+id/gatheringDigitalThingsMotionLayout"
+                        android:layout_width="480dp"
+                        android:layout_height="400dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="60dp"
+                        app:layoutDescription="@xml/gathering_digital_things_scene"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/gatheringDigitalThingsBackgroundImageView">
+
+                        <ImageView
+                            android:id="@+id/tvImageView"
+                            android:layout_width="400dp"
+                            android:layout_height="250dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_tv"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="ContentDescription" />
+
+                        <ImageView
+                            android:id="@+id/tabletImageView"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_tablet"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="ContentDescription" />
+
+                        <ImageView
+                            android:id="@+id/laptopImageView"
+                            android:layout_width="200dp"
+                            android:layout_height="150dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_laptop"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="ContentDescription" />
+
+                        <ImageView
+                            android:id="@+id/phoneImageView"
+                            android:layout_width="100dp"
+                            android:layout_height="130dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_phone"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="ContentDescription" />
+
+                    </androidx.constraintlayout.motion.widget.MotionLayout>
+
+                    <TextView
+                        android:id="@+id/gatheringDigitalThingsTitleTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:gravity="center_horizontal"
+                        android:text="다양한 디바이스에서\n자유롭게 감상"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/gatheringDigitalThingsContentTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_horizontal"
+                        android:text="PC, 태블릿, 펀, 크롬캐스트, TV\n어디서나 최고의 화질로"
+                        android:textColor="@color/white_60"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/gatheringDigitalThingsTitleTextView" />
+                </androidx.constraintlayout.motion.widget.MotionLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/curationAnimationContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp"
+                    android:layout_marginBottom="80dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/gatheringDigitalThingsBackgroundMotionLayout">
+
+                    <TextView
+                        android:id="@+id/curationTitleTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="5억개 평가 데이터 기반\n정확한 추천"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/curationContentTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_horizontal"
+                        android:text="취향에 안 맞는 작품에\n두 시간을 낭비할 순 없으니까"
+                        android:textColor="@color/white_60"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/curationTitleTextView" />
+
+                    <androidx.constraintlayout.motion.widget.MotionLayout
+                        android:id="@+id/curationAnimationMotionLayout"
+                        android:layout_width="480dp"
+                        android:layout_height="480dp"
+                        app:layoutDescription="@xml/curation_animation_scene"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <View
+                            android:id="@+id/redView"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:background="@drawable/shape_circle"
+                            android:backgroundTint="@color/red"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <View
+                            android:id="@+id/yellowView"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:background="@drawable/shape_circle"
+                            android:backgroundTint="@color/yellow"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <View
+                            android:id="@+id/greenView"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:background="@drawable/shape_circle"
+                            android:backgroundTint="@color/green"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <View
+                            android:id="@+id/blueView"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:background="@drawable/shape_circle"
+                            android:backgroundTint="@color/blue"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <View
+                            android:id="@+id/centerView"
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:alpha="0"
+                            android:background="@drawable/shape_circle"
+                            android:backgroundTint="@color/white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.motion.widget.MotionLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="2주 무료 이용"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:fitsSystemWindows="false"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:fitsSystemWindows="false"
+            app:contentScrim="@android:color/transparent"
+            app:expandedTitleGravity="top"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:statusBarScrim="@android:color/transparent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/collapsingToolbarContainer"
+                android:layout_width="match_parent"
+                android:layout_height="420dp"
+                android:fitsSystemWindows="false"
+                app:layout_collapseMode="parallax">
+
+                <ImageView
+                    android:id="@+id/introImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="false"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_intro"
+                    tools:ignore="ContentDescription" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <include
+                android:id="@+id/introTitleLayout"
+                layout="@layout/layout_intro_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                app:layout_scrollFlags="scroll" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:elevation="0dp"
+                android:fitsSystemWindows="false"
+                app:layout_collapseMode="pin"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fitsSystemWindows="true">
+
+                    <View
+                        android:id="@+id/toolbarBackgroundView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/black"
+                        android:fitsSystemWindows="false" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/toolbarContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:fitsSystemWindows="true">
+
+                        <TextView
+                            android:id="@+id/logoTextView"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:scaleType="centerCrop"
+                            android:text="Watching"
+                            android:textColor="@color/red"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="16dp"
+                            android:text="로그인"
+                            android:textColor="@color/white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </FrameLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
