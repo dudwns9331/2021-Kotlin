@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RepositoryActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ownerProfileImageView"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toStartOf="@id/ownerNameAndRepoNameTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_github_logo" />
+
+    <TextView
+        android:id="@+id/ownerNameAndRepoNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/stargazersCountText"
+        app:layout_constraintEnd_toStartOf="@id/likeButton"
+        app:layout_constraintStart_toEndOf="@id/ownerProfileImageView"
+        app:layout_constraintTop_toTopOf="@id/ownerProfileImageView"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="dudwns9331/2021-Summer-Kotlin" />
+
+    <ImageView
+        android:id="@+id/likeButton"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="@id/dividerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/red"
+        tools:src="@drawable/ic_dislike" />
+
+    <TextView
+        android:id="@+id/stargazersCountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        app:drawableStartCompat="@drawable/ic_star"
+        app:drawableTint="@color/orange_yellow"
+        app:layout_constraintBottom_toBottomOf="@id/ownerProfileImageView"
+        app:layout_constraintStart_toStartOf="@id/ownerNameAndRepoNameTextView"
+        app:layout_constraintTop_toBottomOf="@id/ownerNameAndRepoNameTextView"
+        tools:text="1.2k" />
+
+    <TextView
+        android:id="@+id/languageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:layout_marginStart="6dp"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/ic_circle"
+        app:layout_constraintBottom_toBottomOf="@id/stargazersCountText"
+        app:layout_constraintStart_toEndOf="@id/stargazersCountText"
+        app:layout_constraintTop_toTopOf="@id/stargazersCountText"
+        tools:text="Java" />
+
+    <View
+        android:id="@+id/dividerView"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ownerProfileImageView" />
+
+    <TextView
+        android:id="@+id/descriptionTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="설명"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/ownerProfileImageView"
+        app:layout_constraintTop_toBottomOf="@id/dividerView" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/ownerProfileImageView"
+        app:layout_constraintTop_toBottomOf="@id/descriptionTitleTextView"
+        tools:text="부제목" />
+
+    <TextView
+        android:id="@+id/updateTimeTitleTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="업데이트 시간"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/ownerProfileImageView"
+        app:layout_constraintTop_toBottomOf="@id/descriptionTextView" />
+
+    <TextView
+        android:id="@+id/updateTimeTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/ownerProfileImageView"
+        app:layout_constraintTop_toBottomOf="@id/updateTimeTitleTextView"
+        tools:text="부제목" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
