@@ -1,8 +1,8 @@
-# 2021-Summer-Kotlin
+# 2021-Kotlin
 
-2021 Summer Kotlin Stduy &amp; Project
+2021 Kotlin Stduy &amp; Project
 
-2021-08-02 ~ 2021-09-01
+2021-08-02 ~ 2021 12.31
 
 ---
 
