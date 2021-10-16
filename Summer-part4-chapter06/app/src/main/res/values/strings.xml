@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Summer-part4-chapter06</string>
+    <string name="warn">자료 출처 : 환경부/한국환경공단 \n주의사항 : 해당 기관이 제공하는 자료는 “인증을 받지 않은 실시간 자료” 이므로 자료 오류 및 표출방식에 다라 값이 다를 수 있음</string>
+    <string name="error_message">예기치 못한 문제가 발생했습니다.\n잠시 후 다시 시도해주세요</string>
 </resources>
