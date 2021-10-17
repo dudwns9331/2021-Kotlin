@@ -19,3 +19,13 @@
 - Coroutine
 
 - App Widgets
+
+---
+
+## 위젯 만들기
+
+- AppWidgetProviderInfo
+
+- AppWidgetProvider
+
+- Layout
