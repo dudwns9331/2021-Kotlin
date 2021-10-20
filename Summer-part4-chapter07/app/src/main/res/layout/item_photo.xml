@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="12dp"
+    android:paddingVertical="6dp">
+
+
+    <!-- 카드뷰 시작 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp">
+
+        <!-- 카드뷰 안에 있는 이미지 잡기 위한 컨테이너-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/contentsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            tools:layout_height="500dp">
+
+            <!-- 랜덤한 사진을 가져오는 이미지 뷰-->
+            <ImageView
+                android:id="@+id/photoImageView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:background="@color/purple_200"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/profileImageView"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:background="@color/teal_200"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/authorTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="12dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:shadowColor="#60000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="5"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/descriptionTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/profileImageView"
+                app:layout_constraintTop_toTopOf="@+id/profileImageView"
+                app:layout_constraintVertical_chainStyle="packed"
+                tools:text="Author" />
+
+            <TextView
+                android:id="@+id/descriptionTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:alpha="0.8"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:shadowColor="#60000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="5"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/profileImageView"
+                app:layout_constraintEnd_toEndOf="@+id/authorTextView"
+                app:layout_constraintStart_toStartOf="@+id/authorTextView"
+                app:layout_constraintTop_toBottomOf="@+id/authorTextView"
+                tools:text="Description" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</FrameLayout>
