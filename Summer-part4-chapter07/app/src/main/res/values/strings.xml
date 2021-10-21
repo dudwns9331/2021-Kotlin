@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Summer-part4-chapter07</string>
     <string name="search_info">이미지를 검색해보세요</string>
+    <string name="error_message">문제가 생겼어요!\n아래로 당겨 새로고침 해주세요!</string>
 </resources>

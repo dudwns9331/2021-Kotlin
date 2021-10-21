@@ -4,9 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/dksdu/Desktop/CodeFactory/2021-Summer-Kotlin/Summer-part4-chapter07/app/src/main/res/drawable/shape_profile_placeholder.xml" value="0.3435185185185185" />
-        <entry key="..\:/Users/dksdu/Desktop/CodeFactory/2021-Summer-Kotlin/Summer-part4-chapter07/app/src/main/res/layout/activity_main.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/dksdu/Desktop/CodeFactory/2021-Summer-Kotlin/Summer-part4-chapter07/app/src/main/res/layout/activity_main.xml" value="0.2909698996655518" />
         <entry key="..\:/Users/dksdu/Desktop/CodeFactory/2021-Summer-Kotlin/Summer-part4-chapter07/app/src/main/res/layout/item_photo.xml" value="0.34791666666666665" />
         <entry key="..\:/Users/dksdu/Desktop/CodeFactory/2021-Summer-Kotlin/Summer-part4-chapter07/app/src/main/res/layout/layout_photo.xml" value="0.4" />
+        <entry key="..\:/Users/dksdu/Desktop/CodeFactory/2021-Summer-Kotlin/Summer-part4-chapter07/app/src/main/res/layout/view_shimmer_item_photo.xml" value="0.16041666666666668" />
       </map>
     </option>
   </component>
